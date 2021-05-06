@@ -1,9 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 .App {
   text-align: center;
 }
 
-/************************** NAVBAR ************************************************/
+/********************************** NAVBAR ************************************************/
 
 .firstNav{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
     background-color: rgb(16, 39, 66);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a{
+  font-size: 0.7em;
+  height: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+  border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.nav-item a:hover{
+  color: grey;
+}
+
+.not-border{
+  border: none !important;
+}
+
+.secondNav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 100;
+}
+
+.navButtons{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 100%;
+}
+
+.secondNav a{
+  color: rgb(16, 39, 66);
+  text-decoration: none;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.secondNav img{
+  width: 230px;
+  margin-left: 80px;
+}
+
+
+/***************************************** BodyHome **************************************/
+
+.body{
+  height: 630px;
+  background: url(../src/images/tecno1.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body h1{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+}
+
+.body h2{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+.login{
+  color: white;
+  text-decoration: none;
+  padding: 10px 65px;
+  background-color: rgb(74, 150, 201);
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 1s ease-in-out;
+}
+
+.login:hover{
+  background-color: rgb(51, 103, 138);
+  color: white;
+}
+
+/************************************* Body Content ****************************************/
+
+.bodyContent{
+  height: 630px;
+  background:url(../src/images/tecno2.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/**************************************** FOOTER ******************************************/
+.footer{
+  background-color: rgb(16, 39, 66);
+  font-size: 0.7em;
+  padding: 60px 0px;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-link-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link-items a,
+.footer-link-items h2{
+  color: white;
+  text-decoration: none;
+  text-align: start;
+}
+
+.footer-link-items h2{
+  font-size: 1.2em !important;
+}
+
+.footer-link-items a:hover{
+  color: rgb(27, 80, 141);
+}
+
+.footer-link-items-sub{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
