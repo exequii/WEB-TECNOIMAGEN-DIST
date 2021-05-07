@@ -10,19 +10,19 @@ import {Switch, Route} from 'react-router-dom'
 
 
 
-class App extends Component {
-
+export default class App extends Component {
+//function App(){
   render(){
     return (
       <div className="App">
-        <Switch>
-          <Route exact path= '/' component={Home} />
-          <Route path='/content' component={Contenido} />
-          <Route component={NotFound} /> 
-        </Switch>
+          <Switch>
+            <Route exact path= '/' component={Home} />
+            <Route path='/content' component={Contenido} />
+            <Route component={NotFound} /> 
+          </Switch>
       </div>
     );
   } 
 }
 
-export default App;
+//export default App;

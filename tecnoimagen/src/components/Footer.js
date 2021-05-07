@@ -5,7 +5,7 @@ render(){
   return (
     < div className='footer'>
 
-      <div class='footer-links'>
+      <div className='footer-links'>
 
         
           <div className='footer-link-items'>

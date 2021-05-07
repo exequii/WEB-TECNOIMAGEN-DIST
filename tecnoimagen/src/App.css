@@ -40,9 +40,29 @@
   color: grey;
 }
 
+.iconos{
+  height: 30px !important;
+  width: 30px;
+}
+
+.telefono{
+  height: 30px !important;
+  cursor: pointer;
+}
+
+.telefono:hover{
+  color: grey;
+}
+
+.nav-item img{
+  width: 25px;
+}
+
 .not-border{
   border: none !important;
 }
+
+/******************************************** SEGUNDO NAV *****************************************/
 
 .secondNav{
     width: 100%;
@@ -63,7 +83,7 @@
   height: 100%;
 }
 
-.secondNav a{
+.botoncito{
   color: rgb(16, 39, 66);
   text-decoration: none;
   margin-left: 5%;
@@ -71,6 +91,36 @@
   align-items: center;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
+
+  position: relative;
+}
+
+.botoncito:hover{
+  color: #0d6efd;
+}
+
+.botoncito:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #0d6efd;
+  position: absolute;
+  /*left:0;*/
+  bottom:15px;
+  transition: all .3s;
+}
+
+.botoncito:hover:before{
+  width: 100%;
+}
+
+.botoncito:before{
+left:50%;
+}
+
+.botoncito:hover:before{
+left:0;
 }
 
 .secondNav img{
@@ -92,10 +142,13 @@
   justify-content: center;
 }
 
+
+
 .body h1{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 4em;
+  font-weight: 500;
 }
 
 .body h2{
@@ -128,9 +181,13 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
 }
 
 
