@@ -3,8 +3,9 @@ import './App.css'
 import { Component } from 'react';
 
 import {Home} from './pages/Home'
-import {Contenido} from './pages/Contenido';
+import {Login} from './pages/Login';
 import {NotFound} from './pages/NotFound'
+import {Content} from './pages/Content'
 
 import {Switch, Route} from 'react-router-dom'
 
@@ -17,7 +18,8 @@ export default class App extends Component {
       <div className="App">
           <Switch>
             <Route exact path= '/' component={Home} />
-            <Route path='/content' component={Contenido} />
+            <Route path='/login' component={Login} />
+            <Route path='/content' component={Content} />
             <Route component={NotFound} /> 
           </Switch>
       </div>

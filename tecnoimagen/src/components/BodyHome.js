@@ -6,10 +6,12 @@ export class BodyHome extends Component {
     render(){
       return (
                 <div className="body">
-                    <img src={logo} alt=""></img>
-                    <h1>TECNOIMAGEN</h1>
-                    <h2>DISTRIBUIDORES</h2>
-                    <Link className="login" to='/content'>INGRESAR</Link>
+                    <div className="bodyContainer">
+                      <img src={logo} alt=""></img>
+                      <h1>TECNOIMAGEN</h1>
+                      <h2>DISTRIBUIDORES</h2>
+                      <Link className="login" to='/login'>INGRESAR</Link>
+                    </div>
                 </div>
       )
     }

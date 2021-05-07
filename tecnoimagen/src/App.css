@@ -128,6 +128,20 @@ left:0;
   margin-left: 80px;
 }
 
+.logout{
+  width: 80px;
+  background-color: rgb(221, 67, 67);
+  border:none;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.logout:hover{
+  background-color: tomato;
+}
+
 
 /***************************************** BodyHome **************************************/
 
@@ -142,16 +156,27 @@ left:0;
   justify-content: center;
 }
 
+.bodyContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.bodyContainer img{
+  width: 60%;
+}
 
 
-.body h1{
+.bodyContainer h1{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 4em;
   font-weight: 500;
 }
 
-.body h2{
+.bodyContainer h2{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
@@ -173,13 +198,20 @@ left:0;
   color: white;
 }
 
-/************************************* Body Content ****************************************/
+/************************************* Body Login ****************************************/
 
-.bodyContent{
+.bodyLogin{
   height: 630px;
   background:url(../src/images/tecno2.jpg) fixed;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.formContainer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +220,61 @@ left:0;
 .form{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 400px;
+  background-color: rgba(43, 43, 43);
+  border-radius: 10px;
+}
+
+.form img{
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.bodyLogin label{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bodyLogin input{
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.bodyLogin button{
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.bodyLogin button:hover{
+  background-color: rgb(175, 175, 175);
+  cursor: pointer;
+}
+
+
+/***************************************** BODY CONTENT ***********************************/
+
+.bodyContent{
+  height: 630px;
+  background:url(../src/images/tecno3.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 
