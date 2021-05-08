@@ -6,6 +6,7 @@ import {Home} from './pages/Home'
 import {Login} from './pages/Login';
 import {NotFound} from './pages/NotFound'
 import {Content} from './pages/Content'
+import {Ultrasonido} from './pages/Ultrasonido'
 
 import {Switch, Route} from 'react-router-dom'
 
@@ -20,6 +21,7 @@ export default class App extends Component {
             <Route exact path= '/' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/content' component={Content} />
+            <Route path='/ultrasonido' component={Ultrasonido} />
             <Route component={NotFound} /> 
           </Switch>
       </div>

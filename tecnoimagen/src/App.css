@@ -326,22 +326,36 @@ left:0;
 /***************************************** BODY CONTENT ***********************************/
 
 .bodyContent{
-  height: 630px;
+  margin-top: 85px;
   background:url(../src/images/tecno3.jpg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  justify-content: space-around;
+}
+
+/************************************* BODY ULTRA *****************************************/
+
+.bodyUltra{
+  margin-top: 85px;
+  background:url(../src/images/tecno3.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
 }
 
 /**************************************** WORK UNITS ***************************************/
 
 .unitsContainer{
-  height: 280px;
-  width: 280px;
-  background-color: rgb(214, 214, 214);
+  height: 250px;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-top: 4%;
   box-shadow: 5px 5px 20px 2px black;
@@ -352,6 +366,7 @@ left:0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .unitsContainer:hover{
@@ -359,7 +374,43 @@ left:0;
 }
 
 .unitsContainer img{
-  width: 180px;
+  width: 140px;
+}
+
+/********************************************* DROP DOWN *************************************/
+
+.dropdown-toggle{
+  width: 200px;
+  height: 200px;
+}
+
+/**************************************** SUB UNITS ****************************************/
+
+.subUnitsContainer{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 4%;
+  box-shadow: 5px 5px 20px 2px black;
+  text-decoration: none;
+  color: #174180;
+  transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.subUnitsContainer img{
+  width: 100px;
+}
+
+.subUnitsContainer:hover{
+  background-color: rgb(177, 177, 177);
+  cursor:pointer;
+  transform: translateY(-5%);
 }
 
 /**************************************** FOOTER ******************************************/
