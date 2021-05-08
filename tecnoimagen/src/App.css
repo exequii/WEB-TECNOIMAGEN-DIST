@@ -140,12 +140,14 @@ left:0;
 
 .logout:hover{
   background-color: tomato;
+  cursor: pointer;
 }
+
 
 
 /***************************************** BodyHome **************************************/
 
-.body{
+.containerBody{
   height: 630px;
   background: url(../src/images/tecno1.jpg) fixed;
   background-position: center;
@@ -156,30 +158,28 @@ left:0;
   justify-content: center;
 }
 
-.bodyContainer{
+.bodyHome{
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70%;
+
 }
 
-.bodyContainer img{
-  width: 60%;
-}
-
-
-.bodyContainer h1{
+.bodyHome h1{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 4em;
   font-weight: 500;
+  margin: 0% !important;
 }
 
-.bodyContainer h2{
+.bodyHome h2{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 .login{
@@ -211,10 +211,41 @@ left:0;
   justify-content: space-around;
 }
 
+.infoDist{
+  width: 40%;
+  text-align: start;
+}
+
+.infoDist h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+
+}
+
+.infoDist p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.infoDist a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4em;
+  transition: all 1s ease-in-out;
+}
+
+.infoDist a:hover{
+  color:black;
+}
+
 .formContainer{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6%;
+  width: 40%;
 }
 
 .form{
@@ -263,6 +294,34 @@ left:0;
   cursor: pointer;
 }
 
+.registrar{
+  display: none;
+}
+
+.ingresar{
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  text-decoration: none !important;
+  color:black;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingresar:hover{
+  background-color: rgb(175, 175, 175);
+}
+
+.fotoIngresar{
+  width: 200px !important;
+}
+
 
 /***************************************** BODY CONTENT ***********************************/
 
@@ -277,7 +336,31 @@ left:0;
   justify-content: space-around;
 }
 
+/**************************************** WORK UNITS ***************************************/
 
+.unitsContainer{
+  height: 280px;
+  width: 280px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 10px;
+  margin-top: 4%;
+  box-shadow: 5px 5px 20px 2px black;
+  text-decoration: none;
+  color: #174180;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unitsContainer:hover{
+  transform: translateY(-5%);
+}
+
+.unitsContainer img{
+  width: 180px;
+}
 
 /**************************************** FOOTER ******************************************/
 .footer{

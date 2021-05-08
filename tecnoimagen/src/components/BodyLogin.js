@@ -4,6 +4,8 @@ import {useHistory} from 'react-router-dom'
 
 import {auth} from '../firebaseconfig'
 
+import {Link} from 'react-router-dom'
+
 const BodyLogin = () => {
 
     const[email,setEmail] = useState('')
@@ -41,14 +43,40 @@ const BodyLogin = () => {
         })
     }
 
+    const [usuario,setUsuario] = useState(null)
+    useEffect( ()=> {
+        auth.onAuthStateChanged( (user) => {
+            if (user){
+                setUsuario(user.email)
+            }
+        })
+    },[])
+
       return (
                 <div className="bodyLogin">
-                    <div>
-                        <img src={logo2} alt=""></img>
+                    <div className="infoDist">
+                        <h2>DISTRIBUIDORES</h2>
+                        <p>Además de nuestras oficinas de venta directa en Capital Federal,
+                             disponemos de una amplia red de Distribuidores Oficiales para cada
+                              línea de producto que comercializamos.</p>
+                        <p>Todos nuestros distribuidores asisten anualmente a cursos de formación organizados
+                             por Tecnoimagen con el objetivo de asegurar un elevado conocimiento del producto y
+                              las aptitudes técnicas que requerimos para la aplicación y soporte eficaz de las soluciones que brindamos.</p>
+                        <p>¿Queres trabajar con nosotros?</p><a href="mailto:info@tecnoimagen.com.ar">¡CONTACTANOS!</a>
                     </div>
 
-                    <div className="formContainer">
-                        <form onSubmit={RegistrarUsuario} className="form">
+                    {
+                        usuario ?
+                        (
+                            <div className="form">
+                                <img src={logo2} alt="" className="fotoIngresar"></img>
+                                <Link to='/content' className="ingresar">INGRESAR</Link>
+                            </div>
+                        )
+                        :
+                        (
+                        <div className="formContainer">
+                            <form onSubmit={RegistrarUsuario} className="form">
                                 <img src={logo2} alt=""></img>
 
                                 <label>Correo Electronico:</label>
@@ -63,24 +91,27 @@ const BodyLogin = () => {
                                     placeholder="Introduce la contraseña"
                                     type="password" />
                                 
-                                <input value="Registrar" type="submit"/>
+                                <input value="Registrar" type="submit" className="registrar"/>
                                 <button onClick={LoginUsuario}>
                                     Iniciar Sesion
                                 </button>
                         
-                        {
-                            msgError != null ?
-                            (
-                                <div>{msgError}</div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
+                                {
+                                    msgError != null ?
+                                    (
+                                        <div>{msgError}</div>
+                                    )
+                                    :
+                                    (
+                                        <div></div>
+                                    )
+                                }
         
-                        </form>
-                    </div>
+                            </form>
+                        </div>
+                        )
+                    }
+                    
                 </div>
       );
     }   
