@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 import SubUnits from '../components/SubUnits'
+import Pdfs from '../components/Pdfs'
 
 
 import Esaote from '../images/esaote.png'
@@ -27,7 +28,12 @@ export const BodyUltra = () => {
         })
     },[])
 
-
+    const [show1, setShow1] = useState(false)
+    const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
+    const [show4, setShow4] = useState(false)
+    const [show5, setShow5] = useState(false)
+    const [show6, setShow6] = useState(false)
     
     return(
         <div>
@@ -37,39 +43,120 @@ export const BodyUltra = () => {
             
             (
                 <div className="bodyUltra">
-                    <div>
+                    <div className="items">
+                        <div onClick={() => {
+                            setShow1(!show1);
+                        }}>
                         <SubUnits nombre="ESAOTE" unidadImagen={Esaote}></SubUnits>
-                        <div>
-                            
-                        </div>
+                       </div>
+                        {
+                            show1 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PDF1"></Pdfs>
+                                    <Pdfs nombre="PDF2"></Pdfs>
+                                    <Pdfs nombre="PDF3"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
+                        
                     </div>
 
-                    <div>
-                        <SubUnits nombre="SONOSITE" unidadImagen={Sonosite}></SubUnits>
-                        <div>
-                            
+                    <div className="items">
+                        <div onClick={() => {
+                                setShow2(!show2);
+                            }}>
+                        <SubUnits nombre="SONOSITE" unidadImagen={Sonosite}></SubUnits>   
                         </div>
+
+                        {
+                            show2 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PDF1"></Pdfs>
+                                    <Pdfs nombre="PDF2"></Pdfs>
+                                    <Pdfs nombre="PDF3"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
                     </div>
 
-                    <div>
+                    <div className="items">
+                        <div onClick={() => {
+                                    setShow3(!show3);
+                                }}>
                         <SubUnits nombre="VINNO" unidadImagen={Vinno}></SubUnits>
-                        <div>
-                            
                         </div>
+
+                        {
+                            show3 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PDF1"></Pdfs>
+                                    <Pdfs nombre="PDF2"></Pdfs>
+                                    <Pdfs nombre="PDF3"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
                     </div>
 
-                    <div>
+                    <div className="items">
+                        <div onClick={() => {
+                                    setShow4(!show4);
+                                }}>
                         <SubUnits nombre="VETERINARIA" unidadImagen={Veterinaria}></SubUnits>
-                        <div>
-                            
                         </div>
+
+                        {
+                            show4 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PDF1"></Pdfs>
+                                    <Pdfs nombre="PDF2"></Pdfs>
+                                    <Pdfs nombre="PDF3"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
                     </div>
 
-                    <div>
+                    <div className="items">
+                        <div onClick={() => {
+                                    setShow5(!show5);
+                                }}>
                         <SubUnits nombre="WISONIC" unidadImagen={Wisonic}></SubUnits>
-                        <div>
-                            
                         </div>
+
+                        {
+                            show5 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PDF1"></Pdfs>
+                                    <Pdfs nombre="PDF2"></Pdfs>
+                                    <Pdfs nombre="PDF3"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
+
                     </div>
                 </div>
             )
