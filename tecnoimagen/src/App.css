@@ -421,9 +421,8 @@ left:0;
   display: flex;
   flex-wrap: wrap;
   transition: all 1s ease-in-out;
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  border-radius: 5px;
+  background-color: rgba(170, 162, 162, 0.327);
   margin: 20px;
 }
 
@@ -441,16 +440,25 @@ left:0;
   justify-content: center;
   text-decoration: none;
   color: white;
+  margin:5px;
+  width: 100px;
 }
 
 .pdf-item img{
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  filter: saturate(200%);
 }
 
 .pdf-item h3{
   font-family: 'Work Sans', sans-serif;
   font-size: 0.9em;
+  text-align: center;
+}
+
+.pdf-item:hover{
+  cursor: pointer;
+  color: black;
 }
 
 /**************************************** FOOTER ******************************************/

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import {NavBar} from '../components/NavBar'
 import {Footer} from '../components/Footer'
-import {BodyContent} from '../components/BodyContent'
+import {BodyRadio} from '../components/BodyRadio'
 
 
 export class Radiologia extends Component {
@@ -12,7 +12,7 @@ export class Radiologia extends Component {
     return (
         <div>
             <NavBar></NavBar>
-            <BodyContent></BodyContent>
+            <BodyRadio></BodyRadio>
             <Footer></Footer>
         </div>
         
