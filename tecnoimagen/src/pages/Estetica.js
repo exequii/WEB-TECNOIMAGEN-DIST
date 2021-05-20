@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import {NavBar} from '../components/NavBar'
 import {Footer} from '../components/Footer'
-import {BodyContent} from '../components/BodyContent'
+import {BodyEstetica} from '../components/BodyEstetica'
 
 
 export class Estetica extends Component {
@@ -12,7 +12,7 @@ export class Estetica extends Component {
     return (
         <div>
             <NavBar></NavBar>
-            <BodyContent></BodyContent>
+            <BodyEstetica></BodyEstetica>
             <Footer></Footer>
         </div>
         

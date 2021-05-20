@@ -13,6 +13,7 @@ const BodyLogin = () => {
     const [msgError,setMsgError] = useState(null)
     const historial = useHistory()
 
+
     const RegistrarUsuario = (e) =>{
         e.preventDefault()
         auth.createUserWithEmailAndPassword(email,pass)
@@ -30,7 +31,8 @@ const BodyLogin = () => {
             })
     }
 
-    const LoginUsuario = () => {
+    const LoginUsuario = (e) => {
+        e.preventDefault()
         auth.signInWithEmailAndPassword(email,pass)
         .then( (r) => {
             historial.push('/content')
@@ -76,7 +78,7 @@ const BodyLogin = () => {
                         :
                         (
                         <div className="formContainer">
-                            <form onSubmit={RegistrarUsuario} className="form">
+                            <form onSubmit={LoginUsuario} className="form">
                                 <img src={logo2} alt=""></img>
 
                                 <label>Correo Electronico:</label>
@@ -99,7 +101,7 @@ const BodyLogin = () => {
                                 {
                                     msgError != null ?
                                     (
-                                        <div>{msgError}</div>
+                                        <div className="mensajeError">{msgError}</div>
                                     )
                                     :
                                     (

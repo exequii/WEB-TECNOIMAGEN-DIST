@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import {NavBar} from '../components/NavBar'
 import {Footer} from '../components/Footer'
-import {BodyContent} from '../components/BodyContent'
+import {BodyHospitalaria} from '../components/BodyHospitalaria'
 
 
 export class Hospitalaria extends Component {
@@ -12,7 +12,7 @@ export class Hospitalaria extends Component {
     return (
         <div>
             <NavBar></NavBar>
-            <BodyContent></BodyContent>
+            <BodyHospitalaria></BodyHospitalaria>
             <Footer></Footer>
         </div>
         

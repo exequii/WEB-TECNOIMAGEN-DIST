@@ -1,12 +1,13 @@
 import React, {useState,useEffect} from 'react'
 
 import {Link} from 'react-router-dom'
+import Folder from '../images/folder.png'
 
 export const SubUnits = (props) => {
     return(
 
         <div className="subUnitsContainer"> 
-            <img src={props.unidadImagen} alt=""></img>
+            <img src={Folder} alt=""></img>
             <h2>
                 {props.nombre}
             </h2>

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import SubUnits from '../components/SubUnits'
 import Pdfs from '../components/Pdfs'
+import { BodyError } from './BodyError'
 
 
 
@@ -40,9 +41,51 @@ export const BodyRadio = () => {
 
                     <div className="items">
                         <div onClick={() => {
+                            setShow1(!show1);
+                        }}>
+                        <SubUnits nombre="DENSITOMETRIA"></SubUnits>
+                       </div>
+                        {
+                            show1 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
+                        
+                    </div>
+
+                    <div className="items">
+                        <div onClick={() => {
+                                setShow2(!show2);
+                            }}>
+                        <SubUnits nombre="MAMOGRAFIA"></SubUnits>   
+                        </div>
+
+                        {
+                            show2 ? 
+                            (
+                                <div className="sub-items">
+                                    <Pdfs nombre="AMULET INNOVALITY"></Pdfs>
+                                </div>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
+                    </div>
+
+                    <div className="items">
+                        <div onClick={() => {
                                     setShow3(!show3);
                                 }}>
-                        <SubUnits nombre="RAYOS X" ></SubUnits>
+                        <SubUnits nombre="RAYOS X"></SubUnits>
                         </div>
 
                         {
@@ -50,7 +93,7 @@ export const BodyRadio = () => {
                             (
                                 <div className="sub-items">
                                     <Pdfs nombre="JUMONG F"></Pdfs>
-                                    <Pdfs nombre="JUMONG GENERAL JMPs"></Pdfs>
+                                    <Pdfs nombre="GENERAL JMPs"></Pdfs>
                                     <Pdfs nombre="JUMONG MOBILE"></Pdfs>
                                     <Pdfs nombre="JUMONG GENERAL"></Pdfs>
                                     <Pdfs nombre="JUMONG M"></Pdfs>
@@ -70,7 +113,7 @@ export const BodyRadio = () => {
                         <div onClick={() => {
                                     setShow4(!show4);
                                 }}>
-                        <SubUnits nombre="RESONANCIA" ></SubUnits>
+                        <SubUnits nombre="RESONANCIA"></SubUnits>
                         </div>
 
                         {
@@ -94,7 +137,7 @@ export const BodyRadio = () => {
                         <div onClick={() => {
                                     setShow5(!show5);
                                 }}>
-                        <SubUnits nombre="TOMOGRAFIA" ></SubUnits>
+                        <SubUnits nombre="TOMOGRAFIA"></SubUnits>
                         </div>
 
                         {
@@ -113,55 +156,11 @@ export const BodyRadio = () => {
                         }
 
                     </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow1(!show1);
-                        }}>
-                        <SubUnits nombre="DENSITOMETRIA" ></SubUnits>
-                       </div>
-                        {
-                            show1 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                                setShow2(!show2);
-                            }}>
-                        <SubUnits nombre="MAMOGRAFIA" ></SubUnits>   
-                        </div>
-
-                        {
-                            show2 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="AMULET INNOVALITY"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                    </div>
                 </div>
             )
             :
             (
-                <div className="bodyContent">
-                    <h1>NO PUEDES ACCEDER A ESTE CONTENIDO!</h1>
-                </div>
+                <BodyError></BodyError>
             )
         }
         </div>

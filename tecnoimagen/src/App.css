@@ -322,6 +322,14 @@ left:0;
   width: 200px !important;
 }
 
+.mensajeError{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(194, 86, 86, 0.575);
+  color: white;
+  margin-top: 10px;
+}
+
 
 /***************************************** BODY CONTENT ***********************************/
 
@@ -345,6 +353,48 @@ left:0;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+/************************************* BODY ESTETICA *****************************************/
+
+.bodyEstetica{
+  margin-top: 85px;
+  background:url(../src/images/tecno3.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+/************************************* BODY HOSPITALARIA *****************************************/
+
+.bodyHospitalaria{
+  margin-top: 85px;
+  background:url(../src/images/tecno3.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+/***************************************** BODY ERROR *************************************/
+
+.bodyError{
+  margin-top: 85px;
+  background:url(../src/images/tecno3.jpg) fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 500px;
@@ -387,24 +437,29 @@ left:0;
 /**************************************** SUB UNITS ****************************************/
 
 .subUnitsContainer{
-  height: 200px;
-  width: 200px;
+  height: 60px;
+  width: 800px;
   background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 4%;
   box-shadow: 5px 5px 20px 2px black;
   text-decoration: none;
   color: #174180;
   transition: all 1s ease-in-out;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 20px;
 }
 
+.subUnitsContainer h2{
+  font-size: 1.6em;
+  height: 20px;
+  margin-left: 15px;
+}
+
 .subUnitsContainer img{
-  width: 100px;
+  width: 50px;
+  margin-left: 20px;
 }
 
 .subUnitsContainer:hover{
@@ -415,6 +470,7 @@ left:0;
 /************************************** SUB ITEMS ******************************************/
 .items{
   display: flex;
+  flex-direction: column;
 }
 
 .sub-items{
@@ -454,6 +510,7 @@ left:0;
   font-family: 'Work Sans', sans-serif;
   font-size: 0.9em;
   text-align: center;
+  height: 20px;
 }
 
 .pdf-item:hover{

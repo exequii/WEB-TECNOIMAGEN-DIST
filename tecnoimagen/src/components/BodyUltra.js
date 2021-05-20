@@ -7,12 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import SubUnits from '../components/SubUnits'
 import Pdfs from '../components/Pdfs'
 
-
-import Esaote from '../images/esaote.png'
-import Sonosite from '../images/sonosite.png'
-import Vinno from '../images/vinno.jpg'
-import Veterinaria from '../images/veterinaria.png'
-import Wisonic from '../images/wisonic.jpg'
+import { BodyError } from './BodyError'
 
 export const BodyUltra = () => {
 
@@ -46,7 +41,7 @@ export const BodyUltra = () => {
                         <div onClick={() => {
                             setShow1(!show1);
                         }}>
-                        <SubUnits nombre="ESAOTE" unidadImagen={Esaote}></SubUnits>
+                        <SubUnits nombre="ESAOTE"></SubUnits>
                        </div>
                         {
                             show1 ? 
@@ -89,7 +84,7 @@ export const BodyUltra = () => {
                         <div onClick={() => {
                                 setShow2(!show2);
                             }}>
-                        <SubUnits nombre="SONOSITE" unidadImagen={Sonosite}></SubUnits>   
+                        <SubUnits nombre="SONOSITE"></SubUnits>   
                         </div>
 
                         {
@@ -120,7 +115,7 @@ export const BodyUltra = () => {
                         <div onClick={() => {
                                     setShow3(!show3);
                                 }}>
-                        <SubUnits nombre="VINNO" unidadImagen={Vinno}></SubUnits>
+                        <SubUnits nombre="VINNO"></SubUnits>
                         </div>
 
                         {
@@ -142,7 +137,7 @@ export const BodyUltra = () => {
                         <div onClick={() => {
                                     setShow4(!show4);
                                 }}>
-                        <SubUnits nombre="VETERINARIA" unidadImagen={Veterinaria}></SubUnits>
+                        <SubUnits nombre="VETERINARIA"></SubUnits>
                         </div>
 
                         {
@@ -164,7 +159,7 @@ export const BodyUltra = () => {
                         <div onClick={() => {
                                     setShow5(!show5);
                                 }}>
-                        <SubUnits nombre="WISONIC" unidadImagen={Wisonic}></SubUnits>
+                        <SubUnits nombre="WISONIC"></SubUnits>
                         </div>
 
                         {
@@ -186,9 +181,7 @@ export const BodyUltra = () => {
             )
             :
             (
-                <div className="bodyContent">
-                    <h1>NO PUEDES ACCEDER A ESTE CONTENIDO!</h1>
-                </div>
+                <BodyError></BodyError>
             )
         }
         </div>

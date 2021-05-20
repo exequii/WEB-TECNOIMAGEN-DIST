@@ -54,7 +54,7 @@ export const BodyContent = () => {
                                 url='/radiologia'>
                     </WorkUnits>
 
-                    <WorkUnits  unidad="INSUMOS PARA BIOPSIA" 
+                    <WorkUnits  unidad="BIOPSIA" 
                                 unidadImagen={Biopsia}
                                 url='/biopsia'>
                     </WorkUnits>
