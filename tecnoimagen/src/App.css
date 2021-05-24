@@ -475,7 +475,7 @@ left:0;
 
 .sub-items{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   transition: all 1s ease-in-out;
   border-radius: 5px;
   background-color: rgba(170, 162, 162, 0.327);
@@ -491,26 +491,25 @@ left:0;
 
 .pdf-item{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   text-decoration: none;
   color: white;
   margin:5px;
-  width: 100px;
+  margin-left: 20px;
+  width: 100%;
 }
 
 .pdf-item img{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   filter: saturate(200%);
 }
 
 .pdf-item h3{
   font-family: 'Work Sans', sans-serif;
-  font-size: 0.9em;
+  font-size: 1.2em;
   text-align: center;
-  height: 20px;
 }
 
 .pdf-item:hover{
