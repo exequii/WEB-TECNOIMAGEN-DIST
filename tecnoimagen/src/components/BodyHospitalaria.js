@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import SubUnits from '../components/SubUnits'
 import Pdfs from '../components/Pdfs'
+import TipoEquipo from '../components/TipoEquipo'
 import { BodyError } from './BodyError'
 
 
@@ -48,6 +49,20 @@ export const BodyHospitalaria= () => {
     const [show23, setShow23] = useState(false)
     const [show24, setShow24] = useState(false)
     const [show25, setShow25] = useState(false)
+    const [show26, setShow26] = useState(false)
+    const [show27, setShow27] = useState(false)
+    const [show28, setShow28] = useState(false)
+    const [show288, setShow288] = useState(false)
+
+
+    const [show29, setShow29] = useState(false)
+    const [show30, setShow30] = useState(false)
+    const [show31, setShow31] = useState(false)
+    const [show32, setShow32] = useState(false)
+    const [show33, setShow33] = useState(false)
+    const [show34, setShow34] = useState(false)
+
+
     
     return(
         <div>
@@ -57,523 +72,799 @@ export const BodyHospitalaria= () => {
             
             (
                 <div className="bodyHospitalaria">
+{/*********************************************************************************************************** */}
 
                     <div className="items">
                         <div onClick={() => {
-                            setShow1(!show1);
+                                setShow29(!show29);
                         }}>
-                        <SubUnits nombre="BOMBAS"></SubUnits>
-                       </div>
-                        {
-                            show1 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                        <TipoEquipo nombre="COMEN"></TipoEquipo>
+                        </div>
+                    </div>
+
+                    {  
+                        show29 ? 
+
+                        (
+                            <div className="tipoEquipo">
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow1(!show1);
+                                    }}>
+                                    <SubUnits nombre="FOTOTERAPIA"></SubUnits>
+                                    </div>
+        
+                                    {
+                                        show1 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
                                 </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                            setShow2(!show2);
+                                        }}>
+                                    <SubUnits nombre="INCUBADORAS"></SubUnits>   
+                                    </div>
+
+                                    {
+                                        show2 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                                setShow3(!show3);
+                                            }}>
+                                    <SubUnits nombre="SERVOCUNAS"></SubUnits>
+                                    </div>
+
+                                    {
+                                        show3 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                                setShow4(!show4);
+                                            }}>
+                                    <SubUnits nombre="MONITORES FETALES"></SubUnits>
+                                    </div>
+
+                                    {
+                                        show4 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                </div>
+                            </div>
+                            )
+                    :
+                    (
+                        <div></div>
+                    )
+                    }
+{/************************************************************************************************************* */}
+                    
+                    <div className="items">
+                        <div onClick={() => {
+                                setShow30(!show30);
+                        }}>
+                        <TipoEquipo nombre="INSIGHTERS"></TipoEquipo>
+                        </div>
+                    </div>
+
+                    {
+                        show30 ?
+                
+                    (
+                    <div className="tipoEquipo">
+                        <div className="items">
+                            <div onClick={() => {
+                                        setShow5(!show5);
+                                    }}>
+                            <SubUnits nombre="SET DE VIA AEREA"></SubUnits>
+                            </div>
+
+                            {
+                                show5 ? 
+                                (
+                                    <div className="sub-items">
+                                        <Pdfs nombre="ANMAT"></Pdfs>
+                                        <Pdfs nombre="PRESENTACION"></Pdfs>
+                                        <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                        <Pdfs nombre="DATASHEET"></Pdfs>
+                                    </div>
+                                )
+                                :
+                                (
+                                    <div></div>
+                                )
+                            }
+
+                        </div>
+                    </div>
+                    )
+                    :
+                    (
+                        <div></div>
+                    )
+                    }
+{/***************************************************************************************************************** */}
+
+                    <div className="items">
+                        <div onClick={() => {
+                                setShow31(!show31);
+                        }}>
+                        <TipoEquipo nombre="MINDRAY"></TipoEquipo>
+                        </div>
+                    </div>
+
+                    {
+                        show31 ?
+                        (
+                            <div className="tipoEquipo">
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow6(!show6);
+                                    }}>
+                                    <SubUnits nombre="BOMBAS DE INFUSION, RACKS Y CENTRALES"></SubUnits>
+                                    </div>
+                                    {
+                                        show6 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow7(!show7);
+                                    }}>
+                                    <SubUnits nombre="CENTRALES DE MONITOREO"></SubUnits>
+                                    </div>
+                                    {
+                                        show7 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow8(!show8);
+                                    }}>
+                                    <SubUnits nombre="COLUMNAS"></SubUnits>
+                                    </div>
+                                    {
+                                        show8 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow9(!show9);
+                                    }}>
+                                    <SubUnits nombre="DESFIBRILADORES"></SubUnits>
+                                    </div>
+                                    {
+                                        show9 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow10(!show10);
+                                    }}>
+                                    <SubUnits nombre="ELECTROCARDIOGRAFOS"></SubUnits>
+                                    </div>
+                                    {
+                                        show10 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow11(!show11);
+                                    }}>
+                                    <SubUnits nombre="HUMIFICADORES"></SubUnits>
+                                    </div>
+                                    {
+                                        show11 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow12(!show12);
+                                    }}>
+                                    <SubUnits nombre="LAMPARAS SCIALITICAS"></SubUnits>
+                                    </div>
+                                    {
+                                        show12 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow13(!show13);
+                                    }}>
+                                    <SubUnits nombre="MESAS DE ANESTESIA"></SubUnits>
+                                    </div>
+                                    {
+                                        show13 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow15(!show15);
+                                    }}>
+                                    <SubUnits nombre="MESAS DE CIRUGIA"></SubUnits>
+                                    </div>
+                                    {
+                                        show15 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow16(!show16);
+                                    }}>
+                                    <SubUnits nombre="MONITORES MULTIPARAMETRICOS"></SubUnits>
+                                    </div>
+                                    {
+                                        show16 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow17(!show17);
+                                    }}>
+                                    <SubUnits nombre="MONITORES DE SIGNOS VITALES"></SubUnits>
+                                    </div>
+                                    {
+                                        show17 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow18(!show18);
+                                    }}>
+                                    <SubUnits nombre="OXIMETROS"></SubUnits>
+                                    </div>
+                                    {
+                                        show18 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow19(!show19);
+                                    }}>
+                                    <SubUnits nombre="TELEMETROS"></SubUnits>
+                                    </div>
+                                    {
+                                        show19 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow20(!show20);
+                                    }}>
+                                    <SubUnits nombre="TORRE DE LAPAROSCOPIA"></SubUnits>
+                                    </div>
+                                    {
+                                        show20 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow21(!show21);
+                                    }}>
+                                    <SubUnits nombre="VENTILADORES O RESPIRADORES"></SubUnits>
+                                    </div>
+                                    {
+                                        show21 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+                            </div>
                             )
                             :
                             (
                                 <div></div>
                             )
                         }
-                        
-                    </div>
 
+{/****************************************************************************************************************** */}
                     <div className="items">
                         <div onClick={() => {
-                                setShow2(!show2);
+                                setShow32(!show32);
+                        }}>
+                        <TipoEquipo nombre="NEOVERO"></TipoEquipo>
+                        </div>
+                    </div>
+
+                    {
+                        show32 ?
+                    (
+                    <div className="tipoEquipo">
+                        <div className="items">
+                            <div onClick={() => {
+                                setShow22(!show22);
                             }}>
-                        <SubUnits nombre="CAMAS"></SubUnits>   
+                            <SubUnits nombre="ACCESO WEB Y ACCESO MOBILE"></SubUnits>
+                            </div>
+                            {
+                                show22 ? 
+                                (
+                                    <div className="sub-items">
+                                        <Pdfs nombre="ANMAT"></Pdfs>
+                                        <Pdfs nombre="PRESENTACION"></Pdfs>
+                                        <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                        <Pdfs nombre="DATASHEET"></Pdfs>
+                                    </div>
+                                )
+                                :
+                                (
+                                    <div></div>
+                                )
+                            }
+                            
                         </div>
-
-                        {
-                            show2 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="AMULET INNOVALITY"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
                     </div>
+                    )
+                    :
+                    (
+                        <div></div>
+                    )
+                    }
+
+{/****************************************************************************************************************** */}
 
                     <div className="items">
                         <div onClick={() => {
-                                    setShow3(!show3);
-                                }}>
-                        <SubUnits nombre="CAMILLAS"></SubUnits>
+                                setShow33(!show33);
+                        }}>
+                        <TipoEquipo nombre="PARDO"></TipoEquipo>
                         </div>
-
-                        {
-                            show3 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="JUMONG F"></Pdfs>
-                                    <Pdfs nombre="GENERAL JMPs"></Pdfs>
-                                    <Pdfs nombre="JUMONG MOBILE"></Pdfs>
-                                    <Pdfs nombre="JUMONG GENERAL"></Pdfs>
-                                    <Pdfs nombre="JUMONG M"></Pdfs>
-                                    <Pdfs nombre="JUMONG MOBILE"></Pdfs>
-                                    <Pdfs nombre="JUMONG RETRO"></Pdfs>
-                                    <Pdfs nombre="GARION"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
                     </div>
+
+                    {
+                        show33 ?
+                        (
+                            <div className="tipoEquipo">
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow23(!show23);
+                                    }}>
+                                    <SubUnits nombre="CAMAS"></SubUnits>
+                                    </div>
+                                    {
+                                        show23 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow24(!show24);
+                                    }}>
+                                    <SubUnits nombre="CAMILLAS"></SubUnits>
+                                    </div>
+                                    {
+                                        show24 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow25(!show25);
+                                    }}>
+                                    <SubUnits nombre="CUNAS"></SubUnits>
+                                    </div>
+                                    {
+                                        show25 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow26(!show26);
+                                    }}>
+                                    <SubUnits nombre="MESAS DE COMER"></SubUnits>
+                                    </div>
+                                    {
+                                        show26 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow27(!show27);
+                                    }}>
+                                    <SubUnits nombre="MOBILIARIOS"></SubUnits>
+                                </div>
+                                    {
+                                        show27 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="ANMAT"></Pdfs>
+                                                <Pdfs nombre="PRESENTACION"></Pdfs>
+                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
+                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
+                                </div>
+                            </div>
+                        )
+                        :
+                        (
+                            <div></div>
+                        )
+                    }
+
+{/***************************************************************************************************************** */}
 
                     <div className="items">
                         <div onClick={() => {
-                                    setShow4(!show4);
-                                }}>
-                        <SubUnits nombre="COLCHONES"></SubUnits>
+                                setShow34(!show34);
+                        }}>
+                        <TipoEquipo nombre="SCHILLER"></TipoEquipo>
                         </div>
-
-                        {
-                            show4 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="AIRIS VENTO"></Pdfs>
-                                    <Pdfs nombre="APERTO LUCENT"></Pdfs>
-                                    <Pdfs nombre="ECHELON SMART"></Pdfs>
-                                    <Pdfs nombre="SOG SCAN"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
                     </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                                    setShow5(!show5);
-                                }}>
-                        <SubUnits nombre="COLUMNAS DE TECHO"></SubUnits>
-                        </div>
-
-                        {
-                            show5 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="SCENARIA"></Pdfs>
-                                    <Pdfs nombre="SUPRIA 16"></Pdfs>
-                                    <Pdfs nombre="SUPRIA 64"></Pdfs>
+                    
+                    {
+                        show34 ?
+                        (
+                            <div className="tipoEquipo">
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow28(!show28);
+                                    }}>
+                                    <SubUnits nombre="MAPA Y HOLTER"></SubUnits>
+                                    </div>
+                                    {
+                                        show28 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
                                 </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
 
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow6(!show6);
-                        }}>
-                        <SubUnits nombre="DESFIBRILADORES"></SubUnits>
-                       </div>
-                        {
-                            show6 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                <div className="items">
+                                    <div onClick={() => {
+                                        setShow288(!show288);
+                                    }}>
+                                    <SubUnits nombre="TEST DE ESFUERZO"></SubUnits>
+                                    </div>
+                                    {
+                                        show288 ? 
+                                        (
+                                            <div className="sub-items">
+                                                <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                            </div>
+                                        )
+                                        :
+                                        (
+                                            <div></div>
+                                        )
+                                    }
+                                    
                                 </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow7(!show7);
-                        }}>
-                        <SubUnits nombre="ECG"></SubUnits>
-                       </div>
-                        {
-                            show7 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow8(!show8);
-                        }}>
-                        <SubUnits nombre="ENDOSCOPIO"></SubUnits>
-                       </div>
-                        {
-                            show8 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow9(!show9);
-                        }}>
-                        <SubUnits nombre="ERGOESPIROMETRIA"></SubUnits>
-                       </div>
-                        {
-                            show9 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow10(!show10);
-                        }}>
-                        <SubUnits nombre="ESTACION DE DIAGNOSTICO"></SubUnits>
-                       </div>
-                        {
-                            show10 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow11(!show11);
-                        }}>
-                        <SubUnits nombre="HOLTER"></SubUnits>
-                       </div>
-                        {
-                            show11 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow12(!show12);
-                        }}>
-                        <SubUnits nombre="LAMPARAS"></SubUnits>
-                       </div>
-                        {
-                            show12 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow13(!show13);
-                        }}>
-                        <SubUnits nombre="MAPA"></SubUnits>
-                       </div>
-                        {
-                            show13 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow15(!show15);
-                        }}>
-                        <SubUnits nombre="MAQUINA ANESTESIA"></SubUnits>
-                       </div>
-                        {
-                            show15 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow16(!show16);
-                        }}>
-                        <SubUnits nombre="MESA DE CIRUGIA"></SubUnits>
-                       </div>
-                        {
-                            show16 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow17(!show17);
-                        }}>
-                        <SubUnits nombre="MESA DE LUZ"></SubUnits>
-                       </div>
-                        {
-                            show17 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow18(!show18);
-                        }}>
-                        <SubUnits nombre="MONITORES"></SubUnits>
-                       </div>
-                        {
-                            show18 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow19(!show19);
-                        }}>
-                        <SubUnits nombre="NEONATOLOGIA"></SubUnits>
-                       </div>
-                        {
-                            show19 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow20(!show20);
-                        }}>
-                        <SubUnits nombre="NEOVERO"></SubUnits>
-                       </div>
-                        {
-                            show20 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow21(!show21);
-                        }}>
-                        <SubUnits nombre="PULSIOXIMETRO"></SubUnits>
-                       </div>
-                        {
-                            show21 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow22(!show22);
-                        }}>
-                        <SubUnits nombre="RESPIRADORES"></SubUnits>
-                       </div>
-                        {
-                            show22 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow23(!show23);
-                        }}>
-                        <SubUnits nombre="SILLONES"></SubUnits>
-                       </div>
-                        {
-                            show23 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow24(!show24);
-                        }}>
-                        <SubUnits nombre="TEST DE ESFUERZO"></SubUnits>
-                       </div>
-                        {
-                            show24 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
-
-                    <div className="items">
-                        <div onClick={() => {
-                            setShow25(!show25);
-                        }}>
-                        <SubUnits nombre="VIDEO LARINGOSCOPIO"></SubUnits>
-                       </div>
-                        {
-                            show25 ? 
-                            (
-                                <div className="sub-items">
-                                    <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
-                                </div>
-                            )
-                            :
-                            (
-                                <div></div>
-                            )
-                        }
-                        
-                    </div>
+                            </div>
+                        )
+                        :
+                        (
+                            <div></div>
+                        )
+                }
+{/************************************************************************************************************************ */}
 
                 </div>
             )
