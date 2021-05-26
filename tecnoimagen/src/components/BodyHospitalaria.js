@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import SubUnits from '../components/SubUnits'
 import Pdfs from '../components/Pdfs'
 import TipoEquipo from '../components/TipoEquipo'
+import Equipo from '../components/Equipo'
 import { BodyError } from './BodyError'
 
 
@@ -97,11 +98,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show1 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="BL70"></Equipo>
                                             </div>
                                         )
                                         :
@@ -122,11 +120,10 @@ export const BodyHospitalaria= () => {
                                     {
                                         show2 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="B3"></Equipo>
+                                                <Equipo nombre="B6"></Equipo>
+                                                <Equipo nombre="B8"></Equipo>
                                             </div>
                                         )
                                         :
@@ -146,11 +143,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show3 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="BQ80"></Equipo>
                                             </div>
                                         )
                                         :
@@ -170,11 +164,11 @@ export const BodyHospitalaria= () => {
                                     {
                                         show4 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="C11"></Equipo>
+                                                <Equipo nombre="C20"></Equipo>
+                                                <Equipo nombre="C21"></Equipo>
+                                                <Equipo nombre="C22"></Equipo>
                                             </div>
                                         )
                                         :
@@ -215,11 +209,12 @@ export const BodyHospitalaria= () => {
                             {
                                 show5 ? 
                                 (
-                                    <div className="sub-items">
-                                        <Pdfs nombre="ANMAT"></Pdfs>
-                                        <Pdfs nombre="PRESENTACION"></Pdfs>
-                                        <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                        <Pdfs nombre="DATASHEET"></Pdfs>
+                                    <div className="cont">
+                                        <Equipo nombre="VIDEOLARINGO iS3 L"></Equipo>
+                                        <Equipo nombre="FIBROLARINGO iS3 F"></Equipo>
+                                        <Equipo nombre="VIDEOLARINGO SEMIRIGIDO"></Equipo>
+                                        <Equipo nombre="KIT PARA EL MANEJO DE VIA AEREA"></Equipo>
+                                        <Equipo nombre="ESTACION DE TRABAJO"></Equipo>
                                     </div>
                                 )
                                 :
@@ -259,11 +254,12 @@ export const BodyHospitalaria= () => {
                                     {
                                         show6 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="BENEFUSION VP5, SP5 y SP5 TCI"></Equipo>
+                                                <Equipo nombre="BENEFUSION VP3 y SP3"></Equipo>
+                                                <Equipo nombre="VP1 y SP1"></Equipo>
+                                                <Equipo nombre="RACKS"></Equipo>
+                                                <Equipo nombre="CENTRAL DE MONITOREO DE INFUSIONES"></Equipo>
                                             </div>
                                         )
                                         :
@@ -283,11 +279,9 @@ export const BodyHospitalaria= () => {
                                     {
                                         show7 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="HYPERVISOR"></Equipo>
+                                                <Equipo nombre="CMS BENEVISION"></Equipo>
                                             </div>
                                         )
                                         :
@@ -307,11 +301,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show8 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="HYPORT"></Equipo>
                                             </div>
                                         )
                                         :
@@ -331,11 +322,10 @@ export const BodyHospitalaria= () => {
                                     {
                                         show9 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="D1"></Equipo>
+                                                <Equipo nombre="C1 y C2"></Equipo>
+                                                <Equipo nombre="D3 y D6"></Equipo>
                                             </div>
                                         )
                                         :
@@ -355,11 +345,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show10 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="R3 y R12"></Equipo>
                                             </div>
                                         )
                                         :
@@ -379,11 +366,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show11 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="JIKE"></Equipo>
                                             </div>
                                         )
                                         :
@@ -403,11 +387,11 @@ export const BodyHospitalaria= () => {
                                     {
                                         show12 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="HYLED 200 y 600"></Equipo>
+                                                <Equipo nombre="HYLED 7"></Equipo>
+                                                <Equipo nombre="HYLED 8"></Equipo>
+                                                <Equipo nombre="HYLED X"></Equipo>
                                             </div>
                                         )
                                         :
@@ -427,11 +411,10 @@ export const BodyHospitalaria= () => {
                                     {
                                         show13 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="WATO 20 y WATO 35"></Equipo>
+                                                <Equipo nombre="WATO 55 y 65 PRO"></Equipo>
+                                                <Equipo nombre="A5, A7 y A9"></Equipo>
                                             </div>
                                         )
                                         :
@@ -451,11 +434,11 @@ export const BodyHospitalaria= () => {
                                     {
                                         show15 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="UNIBASE 30"></Equipo>
+                                                <Equipo nombre="HYBASE 3000"></Equipo>
+                                                <Equipo nombre="HYBASE 6100"></Equipo>
+                                                <Equipo nombre="HYBASE 8300/8500"></Equipo>
                                             </div>
                                         )
                                         :
@@ -475,11 +458,10 @@ export const BodyHospitalaria= () => {
                                     {
                                         show16 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="uMEC"></Equipo>
+                                                <Equipo nombre="ePM"></Equipo>
+                                                <Equipo nombre="BENEVISION"></Equipo>
                                             </div>
                                         )
                                         :
@@ -499,11 +481,9 @@ export const BodyHospitalaria= () => {
                                     {
                                         show17 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="VS 600"></Equipo>
+                                                <Equipo nombre="VS 900"></Equipo>
                                             </div>
                                         )
                                         :
@@ -523,11 +503,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show18 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="PM60"></Equipo>
                                             </div>
                                         )
                                         :
@@ -547,11 +524,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show19 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="TM80"></Equipo>
                                             </div>
                                         )
                                         :
@@ -571,11 +545,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show20 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="HD3"></Equipo>
                                             </div>
                                         )
                                         :
@@ -595,11 +566,10 @@ export const BodyHospitalaria= () => {
                                     {
                                         show21 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="E3"></Equipo>
+                                                <Equipo nombre="SV300"></Equipo>
+                                                <Equipo nombre="SV600/SV800"></Equipo>
                                             </div>
                                         )
                                         :
@@ -684,11 +654,9 @@ export const BodyHospitalaria= () => {
                                     {
                                         show23 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="V1,V2 y V3"></Equipo>
+                                                <Equipo nombre="BARIATRICA"></Equipo>
                                             </div>
                                         )
                                         :
@@ -708,11 +676,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show24 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="ATICA-TARSIS"></Equipo>
                                             </div>
                                         )
                                         :
@@ -732,11 +697,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show25 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="TREND-RODAS"></Equipo>
                                             </div>
                                         )
                                         :
@@ -756,12 +718,12 @@ export const BodyHospitalaria= () => {
                                     {
                                         show26 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="ATRIL GAS"></Equipo>
+                                                <Equipo nombre="SALDUBA"></Equipo>
+                                                <Equipo nombre="VOLTEABLE"></Equipo>
                                             </div>
+
                                         )
                                         :
                                         (
@@ -780,11 +742,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show27 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="ANMAT"></Pdfs>
-                                                <Pdfs nombre="PRESENTACION"></Pdfs>
-                                                <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
-                                                <Pdfs nombre="DATASHEET"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="SILLONES"></Equipo>
                                             </div>
                                         )
                                         :
@@ -825,8 +784,9 @@ export const BodyHospitalaria= () => {
                                     {
                                         show28 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="BR 102 PLUS Y PLUS PWA"></Equipo>
+                                                <Equipo nombre="MEDILOG F12 - MEDILOGAR"></Equipo>
                                             </div>
                                         )
                                         :
@@ -846,8 +806,9 @@ export const BodyHospitalaria= () => {
                                     {
                                         show288 ? 
                                         (
-                                            <div className="sub-items">
-                                                <Pdfs nombre="PRIMUS OSTEOSYS"></Pdfs>
+                                            <div className="cont">
+                                                <Equipo nombre="CARDIOVIT CS200 EXCELLENCE, TOUCH y CS104"></Equipo>
+                                                <Equipo nombre="CS200 ERGOESPIRO"></Equipo>
                                             </div>
                                         )
                                         :

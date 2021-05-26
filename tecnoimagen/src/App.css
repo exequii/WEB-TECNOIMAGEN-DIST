@@ -357,6 +357,7 @@ left:0;
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  padding-bottom: 10px;
 }
 
 /************************************* BODY ESTETICA *****************************************/
@@ -371,6 +372,7 @@ left:0;
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  padding-bottom: 10px;
 }
 
 /************************************* BODY HOSPITALARIA *****************************************/
@@ -385,6 +387,7 @@ left:0;
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  padding-bottom: 10px;
 }
 
 /***************************************** BODY ERROR *************************************/
@@ -449,7 +452,7 @@ left:0;
   transition: all 1s ease-in-out;
   display: flex;
   align-items: center;
-  margin: 15px 20px 15px 20px;
+  margin: 15px 20px 0px 30px;
 }
 
 .subUnitsContainer h2{
@@ -480,7 +483,7 @@ left:0;
   transition: all 1s ease-in-out;
   border-radius: 5px;
   background-color: rgba(170, 162, 162, 0.327);
-  margin: 5px 20px 5px 40px;
+  margin: 10px 20px 5px 30px;
 }
 
 .active{
@@ -538,19 +541,42 @@ left:0;
 
 /******************************************  EQUIPOS ******************************************/
 
+.cont{
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
 .equipoContainer{
-  height: 60px;
-  width: 800px;
-  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 790px;
+  background-color: rgba(255, 255, 255, 0.815);
   border-radius: 5px;
-  margin-top: 4%;
   box-shadow: 5px 5px 20px 2px black;
   text-decoration: none;
   color: #174180;
   transition: all 1s ease-in-out;
   display: flex;
   align-items: center;
-  margin: 15px 20px 15px 20px;
+}
+
+.equipoContainer h2{
+  font-size: 1.6em;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.equipoContainer img{
+  width: 40px;
+  margin-left: 30px;
+}
+
+.equipoContainer:hover{
+  background-color: rgb(177, 177, 177);
+  cursor:pointer;
 }
 
 /****************************************** PDF ITEM *****************************************/
@@ -562,7 +588,7 @@ left:0;
   text-decoration: none;
   color: white;
   margin: 5px 5px 5px 5px;
-  margin-left: 20px;
+  margin-left: 10px;
   width: 100%;
 }
 
@@ -587,7 +613,7 @@ left:0;
 .footer{
   background-color: rgb(16, 39, 66);
   font-size: 0.7em;
-  padding: 60px 0px;
+  padding: 60px 0px
 }
 
 .footer-links{
