@@ -202,19 +202,20 @@ left:0;
 /************************************* Body Login ****************************************/
 
 .bodyLogin{
-  height: 630px;
+  min-height: 630px;
   background:url(../src/images/tecno2.jpg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
   justify-content: space-around;
+  flex-wrap: wrap
 }
 
 .infoDist{
   width: 40%;
   text-align: start;
+  margin-top: 12%;
 }
 
 .infoDist h2{
@@ -245,7 +246,7 @@ left:0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 6%;
+  margin-top: 3%;
   width: 40%;
 }
 
@@ -258,6 +259,8 @@ left:0;
   height: 400px;
   background-color: rgba(43, 43, 43);
   border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 15px;
 }
 
 .form img{
@@ -421,6 +424,8 @@ left:0;
   justify-content: center;
   align-items: center;
   margin: 20px;
+  margin-left: 35px;
+  margin-right:35px;
 }
 
 .unitsContainer:hover{

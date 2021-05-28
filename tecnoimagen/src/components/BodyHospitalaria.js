@@ -10,6 +10,13 @@ import TipoEquipo from '../components/TipoEquipo'
 import Equipo from '../components/Equipo'
 import { BodyError } from './BodyError'
 
+import Comen from '../images/comen.png'
+import Mindray from '../images/mindray.png'
+import Pardo from '../images/pardo.png'
+import Schiller from '../images/schiller.png'
+import Neo from '../images/neo.png'
+import Insighters from '../images/insighters.png'
+
 
 
 export const BodyHospitalaria= () => {
@@ -79,7 +86,10 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow29(!show29);
                         }}>
-                        <TipoEquipo nombre="COMEN"></TipoEquipo>
+                        <TipoEquipo nombre="COMEN"
+                                    imagen={Comen}>
+
+                        </TipoEquipo>
                         </div>
                     </div>
 
@@ -190,7 +200,8 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow30(!show30);
                         }}>
-                        <TipoEquipo nombre="INSIGHTERS"></TipoEquipo>
+                        <TipoEquipo nombre="INSIGHTERS"
+                                    imagen={Insighters}></TipoEquipo>
                         </div>
                     </div>
 
@@ -237,7 +248,8 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow31(!show31);
                         }}>
-                        <TipoEquipo nombre="MINDRAY"></TipoEquipo>
+                        <TipoEquipo nombre="MINDRAY"
+                                    imagen={Mindray}></TipoEquipo>
                         </div>
                     </div>
 
@@ -592,7 +604,8 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow32(!show32);
                         }}>
-                        <TipoEquipo nombre="NEOVERO"></TipoEquipo>
+                        <TipoEquipo nombre="NEOVERO"
+                                    imagen={Neo}></TipoEquipo>
                         </div>
                     </div>
 
@@ -637,7 +650,8 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow33(!show33);
                         }}>
-                        <TipoEquipo nombre="PARDO"></TipoEquipo>
+                        <TipoEquipo nombre="PARDO"
+                                    imagen={Pardo}></TipoEquipo>
                         </div>
                     </div>
 
@@ -767,7 +781,8 @@ export const BodyHospitalaria= () => {
                         <div onClick={() => {
                                 setShow34(!show34);
                         }}>
-                        <TipoEquipo nombre="SCHILLER"></TipoEquipo>
+                        <TipoEquipo nombre="SCHILLER"
+                                    imagen={Schiller}></TipoEquipo>
                         </div>
                     </div>
                     

@@ -39,7 +39,7 @@ export const BodyContent = () => {
                                 url='/ultrasonido'>
                     </WorkUnits>
 
-                    <WorkUnits  unidad="ESTETICA"
+                    <WorkUnits  unidad="ESTÉTICA"
                                 unidadImagen={Estetica}
                                 url='/estetica'>
                     </WorkUnits>
@@ -49,12 +49,12 @@ export const BodyContent = () => {
                                 url='/hospitalaria'>
                     </WorkUnits>
 
-                    <WorkUnits  unidad="RADIOLOGIA" 
+                    <WorkUnits  unidad="RADIOLOGÍA" 
                                 unidadImagen={Radiologia}
                                 url='/radiologia'>
                     </WorkUnits>
 
-                    <WorkUnits  unidad="BIOPSIA" 
+                    <WorkUnits  unidad="INSUMOS" 
                                 unidadImagen={Biopsia}
                                 url='/biopsia'>
                     </WorkUnits>
@@ -62,7 +62,7 @@ export const BodyContent = () => {
                                 unidadImagen={MedicalIt}
                                 url='/medicalit'>
                     </WorkUnits>
-                    <WorkUnits  unidad="OFTALMOLOGIA" 
+                    <WorkUnits  unidad="OFTALMOLOGÍA" 
                                 unidadImagen={Oftalmologia}
                                 url='/oftalmologia'>
                     </WorkUnits>
