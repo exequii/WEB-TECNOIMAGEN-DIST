@@ -6,73 +6,21 @@
 }
 
 
-/********************************** NAVBAR ************************************************/
-
-.firstNav{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(16, 39, 66);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-
-.nav-item{
-  display: flex;
-  align-items: center;
-}
-
-.nav-item a{
-  font-size: 0.7em;
-  height: 10px;
-  text-decoration: none;
-  color: white;
-  padding: 0px 10px;
-  border-left: 1px solid white;
-  display: flex;
-  align-items: center;
-  font-family: 'Work Sans', sans-serif;
-}
-
-.nav-item a:hover{
-  color: grey;
-}
-
-.iconos{
-  height: 30px !important;
-  width: 30px;
-}
-
-.telefono{
-  height: 30px !important;
-  cursor: pointer;
-}
-
-.telefono:hover{
-  color: grey;
-}
-
-.nav-item img{
-  width: 25px;
-}
-
-.not-border{
-  border: none !important;
-}
-
 /******************************************** SEGUNDO NAV *****************************************/
+.contenedorNav{
+  height: 70px !important;
+  width: 100%;
+}
 
 .secondNav{
     width: 100%;
-    height: 60px;
+    height: 70px !important;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: white;
     position: fixed;
-    top: 30px;
+    top: 0;
     left: 0;
     z-index: 100;
 }
@@ -80,8 +28,9 @@
 .navButtons{
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 45%;
   height: 100%;
+  margin-right: 90px;
 }
 
 .botoncito{
@@ -126,21 +75,21 @@ left:0;
 
 .secondNav img{
   width: 230px;
-  margin-left: 80px;
 }
 
 .logout{
   width: 80px;
-  background-color: rgb(221, 67, 67);
+  background-color: rgb(45, 171, 180);
   border:none;
   border-radius: 10px;
   color: white;
   font-family: 'Poppins', sans-serif;
   transition: all 0.5s ease-in-out;
+  margin-right: 20px;
 }
 
 .logout:hover{
-  background-color: tomato;
+  background-color: #142841;
   cursor: pointer;
 }
 
@@ -172,8 +121,9 @@ left:0;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 4em;
-  font-weight: 500;
-  margin: 0% !important;
+  font-weight: 550;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .bodyHome h2{
@@ -183,19 +133,21 @@ left:0;
   font-weight: 400;
 }
 
+
 .login{
-  color: white;
+  color: #142841;
+  font-weight: 600;
   text-decoration: none;
-  padding: 10px 65px;
-  background-color: rgb(74, 150, 201);
-  border: 2px solid white;
+  padding: 10px 60px;
+  background-color: white;
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   transition: all 1s ease-in-out;
+  margin-top: 60px;
 }
 
 .login:hover{
-  background-color: rgb(51, 103, 138);
+  background-color: #24afb2;
   color: white;
 }
 
@@ -209,44 +161,13 @@ left:0;
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  flex-wrap: wrap
 }
 
-.infoDist{
-  width: 40%;
-  text-align: start;
-  margin-top: 12%;
-}
-
-.infoDist h2{
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.2em;
-
-}
-
-.infoDist p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.infoDist a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4em;
-  transition: all 1s ease-in-out;
-}
-
-.infoDist a:hover{
-  color:black;
-}
 
 .formContainer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3%;
   width: 40%;
 }
 
@@ -255,46 +176,55 @@ left:0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  height: 400px;
-  background-color: rgba(43, 43, 43);
+  width: 400px;
+  height: 450px;
+  background-color: rgb(224, 224, 224);
   border-radius: 10px;
-  margin-top: 10%;
-  margin-bottom: 15px;
+
 }
 
 .form img{
-  width: 130px;
-  margin-bottom: 10px;
+  width: 170px;
+  margin-bottom: 40px;
 }
 
 .bodyLogin label{
-  color: white;
-  font-family: 'Poppins', sans-serif;
-}
-
-.bodyLogin input{
-  width: 250px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 1%;
+  color: black;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
-.bodyLogin button{
+.bodyLogin input{
   width: 250px;
-  height: 30px;
+  height: 35px;
+  border: 1px solid #91abd4;
+  border-radius: 5px;
+  margin-bottom: 1%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background-color: #ccddf8;
+}
+
+.bodyLogin input::placeholder{
+  color: rgb(71, 71, 71);
+}
+
+.buttonLogin{
+  width: 250px;
+  height: 35px;
   border: none;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   transition: all 0.5s ease-in-out;
+  background-color: #142841;
+  color: white;
+  margin-top: 15px;
 }
 
+
 .bodyLogin button:hover{
-  background-color: rgb(175, 175, 175);
+  background-color: #24afb2;
   cursor: pointer;
 }
 
@@ -326,6 +256,16 @@ left:0;
   width: 200px !important;
 }
 
+#login2{
+  background-color: #142841 !important;
+  color:white !important;
+  margin: 0 !important;
+}
+
+#login2:hover{
+  background-color: #24afb2 !important;
+}
+
 .mensajeError{
   padding: 5px;
   border-radius: 5px;
@@ -337,15 +277,24 @@ left:0;
 
 /***************************************** BODY CONTENT ***********************************/
 
-.bodyContent{
-  margin-top: 85px;
+.contenedorSecciones{
+  width: 100%;
+  min-height: 630px;
   background:url(../src/images/tecno3.jpg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
+  justify-content: center;
+}
+
+.bodyContent{
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 60%;
+  height: 60% !important;
+  margin-top: 5%;
 }
 
 /************************************* BODY ULTRA *****************************************/
@@ -381,15 +330,15 @@ left:0;
 /************************************* BODY HOSPITALARIA *****************************************/
 
 .bodyHospitalaria{
-  margin-top: 85px;
   background:url(../src/images/tecno3.jpg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  width: 100%;
   padding-bottom: 10px;
 }
 
@@ -410,8 +359,8 @@ left:0;
 /**************************************** WORK UNITS ***************************************/
 
 .unitsContainer{
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-top: 4%;
@@ -423,9 +372,7 @@ left:0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  margin-left: 35px;
-  margin-right:35px;
+  margin: 10px 10px;
 }
 
 .unitsContainer:hover{
@@ -434,6 +381,10 @@ left:0;
 
 .unitsContainer img{
   width: 140px;
+}
+
+.unitsContainer h2{
+  font-size: 1.2em;
 }
 
 /********************************************* DROP DOWN *************************************/

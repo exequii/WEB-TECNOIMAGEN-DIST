@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import logo from '../images/logo.png'
+import React from 'react'
 import {Link} from 'react-router-dom'
 
-export class BodyHome extends Component {
-    render(){
+export const BodyHome = () => {
+
       return (
                 <div className="containerBody">
                     <div className="bodyHome">
-                      <img src={logo} alt=""></img>
-                      <h1>TECNOIMAGEN</h1>
-                      <h2>DISTRIBUIDORES</h2>
+                      <h1>DISTRIBUIDORES</h1>
+                      <h2>HACIENDO DE TU VIDA UN MEJOR LUGAR.</h2>
                       <Link className="login" to='/login'>INGRESAR</Link>
                     </div>
                 </div>
       )
-    }
 }
+
+
+export default BodyHome

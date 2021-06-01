@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-import logo2 from '../images/logo2.png'
+import logo2 from '../images/logo.png'
 import {useHistory} from 'react-router-dom'
 
 import {auth} from '../firebaseconfig'
@@ -56,24 +56,16 @@ const BodyLogin = () => {
 
       return (
                 <div className="bodyLogin">
-                    <div className="infoDist">
-                        <h2>DISTRIBUIDORES</h2>
-                        <p>Además de nuestras oficinas de venta directa en Capital Federal,
-                             disponemos de una amplia red de Distribuidores Oficiales para cada
-                              línea de producto que comercializamos.</p>
-                        <p>Todos nuestros distribuidores asisten anualmente a cursos de formación organizados
-                             por Tecnoimagen con el objetivo de asegurar un elevado conocimiento del producto y
-                              las aptitudes técnicas que requerimos para la aplicación y soporte eficaz de las soluciones que brindamos.</p>
-                        <p>¿Queres trabajar con nosotros?</p><a href="mailto:info@tecnoimagen.com.ar">¡CONTACTANOS!</a>
-                    </div>
 
                     {
                         usuario ?
                         (
+                        <div className="formContainer">
                             <div className="form">
                                 <img src={logo2} alt="" className="fotoIngresar"></img>
-                                <Link to='/content' className="ingresar">INGRESAR</Link>
+                                <Link to='/content' className="login" id="login2">INGRESAR</Link>
                             </div>
+                        </div>
                         )
                         :
                         (
@@ -94,7 +86,7 @@ const BodyLogin = () => {
                                     type="password" />
                                 
                                 <input value="Registrar" type="submit" className="registrar"/>
-                                <button onClick={LoginUsuario}>
+                                <button onClick={LoginUsuario} className="buttonLogin">
                                     Iniciar Sesion
                                 </button>
                         

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
 
 import {WorkUnits} from '../components/WorkUnits'
+import {BodyError} from '../components/BodyError'
 
 import Ultrasonido from '../images/ultra.jpg'
 import Estetica from '../images/estetica.png'
@@ -33,6 +34,7 @@ export const BodyContent = () => {
             usuario ?
             
             (
+            <div className="contenedorSecciones">
                 <div className="bodyContent">
                     <WorkUnits  unidad="ULTRASONIDO"
                                 unidadImagen={Ultrasonido}
@@ -67,12 +69,11 @@ export const BodyContent = () => {
                                 url='/oftalmologia'>
                     </WorkUnits>
                 </div>
+            </div>
             )
             :
             (
-                <div className="bodyContent">
-                    <h1>NO PUEDES ACCEDER A ESTE CONTENIDO!</h1>
-                </div>
+                <BodyError></BodyError>
             )
         }
         </div>
