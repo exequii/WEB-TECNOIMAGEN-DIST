@@ -1,4 +1,4 @@
-import React, {Component,useState,useEffect} from 'react'
+import React, {Component} from 'react'
 
 import Folder from '../images/folder.png'
 import Pdfs from '../components/Pdfs'

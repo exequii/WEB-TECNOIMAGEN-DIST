@@ -1,11 +1,6 @@
 import React, { useEffect, useState} from 'react'
 
 import Banner from '../images/Banner.png'
-import Facebook from '../images/facebook.png'
-import Instagram from '../images/instagram.png'
-import Linkedin from '../images/linkedin.png'
-import Telefono from '../images/telefono.png'
-
 
 import { auth } from '../firebaseconfig'
 

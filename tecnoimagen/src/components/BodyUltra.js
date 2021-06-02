@@ -27,7 +27,6 @@ export const BodyUltra = () => {
     const [show3, setShow3] = useState(false)
     const [show4, setShow4] = useState(false)
     const [show5, setShow5] = useState(false)
-    const [show6, setShow6] = useState(false)
     
     return(
         <div>

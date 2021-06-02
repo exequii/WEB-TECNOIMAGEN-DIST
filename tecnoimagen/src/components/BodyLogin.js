@@ -13,24 +13,6 @@ const BodyLogin = () => {
     const [msgError,setMsgError] = useState(null)
     const historial = useHistory()
 
-
-    const RegistrarUsuario = (e) =>{
-        e.preventDefault()
-        auth.createUserWithEmailAndPassword(email,pass)
-            .then( r => {
-                historial.push('/')
-            })
-            .catch(e =>{
-                if(e.code === 'auth/invalid-email'){
-                    setMsgError('Formato de Email Incorrecto')
-                }
-                
-                if(e.code === 'auth/weak-password'){
-                    setMsgError('La contraseña debe tener 6 caracteres o más')
-                }
-            })
-    }
-
     const LoginUsuario = (e) => {
         e.preventDefault()
         auth.signInWithEmailAndPassword(email,pass)

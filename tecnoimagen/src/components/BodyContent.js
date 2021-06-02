@@ -1,9 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import { auth } from '../firebaseconfig'
 
-import {Link} from 'react-router-dom'
-import {useHistory} from 'react-router-dom'
-
 import {WorkUnits} from '../components/WorkUnits'
 import {BodyError} from '../components/BodyError'
 

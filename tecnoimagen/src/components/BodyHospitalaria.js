@@ -45,7 +45,7 @@ export const BodyHospitalaria= () => {
     const [show11, setShow11] = useState(false)
     const [show12, setShow12] = useState(false)
     const [show13, setShow13] = useState(false)
-    const [show14, setShow14] = useState(false)
+
     const [show15, setShow15] = useState(false)
     const [show16, setShow16] = useState(false)
     const [show17, setShow17] = useState(false)

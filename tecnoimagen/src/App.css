@@ -98,8 +98,8 @@ left:0;
 /***************************************** BodyHome **************************************/
 
 .containerBody{
-  height: 630px;
-  background: url(../src/images/tecno1.jpg) fixed;
+  min-height: 630px;
+  background: url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -127,9 +127,10 @@ left:0;
 }
 
 .bodyHome h2{
+  width: 38%;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -155,7 +156,7 @@ left:0;
 
 .bodyLogin{
   min-height: 630px;
-  background:url(../src/images/tecno2.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -280,7 +281,7 @@ left:0;
 .contenedorSecciones{
   width: 100%;
   min-height: 630px;
-  background:url(../src/images/tecno3.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -301,7 +302,7 @@ left:0;
 
 .bodyUltra{
   margin-top: 85px;
-  background:url(../src/images/tecno3.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -316,7 +317,7 @@ left:0;
 
 .bodyEstetica{
   margin-top: 85px;
-  background:url(../src/images/tecno3.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -330,7 +331,7 @@ left:0;
 /************************************* BODY HOSPITALARIA *****************************************/
 
 .bodyHospitalaria{
-  background:url(../src/images/tecno3.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -346,7 +347,7 @@ left:0;
 
 .bodyError{
   margin-top: 85px;
-  background:url(../src/images/tecno3.jpg) fixed;
+  background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -431,6 +432,7 @@ left:0;
 .items{
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .sub-items{
