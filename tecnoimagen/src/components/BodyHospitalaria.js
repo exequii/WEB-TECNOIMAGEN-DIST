@@ -83,7 +83,7 @@ export const BodyHospitalaria= () => {
 {/*********************************************************************************************************** */}
 
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow29(!show29);
                         }}>
                         <TipoEquipo nombre="COMEN"
@@ -99,7 +99,7 @@ export const BodyHospitalaria= () => {
                         (
                             <div className="tipoEquipo">
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow1(!show1);
                                     }}>
                                     <SubUnits nombre="FOTOTERAPIA"></SubUnits>
@@ -108,8 +108,8 @@ export const BodyHospitalaria= () => {
                                     {
                                         show1 ? 
                                         (
-                                            <div className="cont">
-                                                <Equipo nombre="BL70"></Equipo>
+                                            <div className="cont contieneResponsive">
+                                                <Equipo nombre="BL70" exceso={true}></Equipo>
                                             </div>
                                         )
                                         :
@@ -121,7 +121,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                             setShow2(!show2);
                                         }}>
                                     <SubUnits nombre="INCUBADORAS"></SubUnits>   
@@ -130,7 +130,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show2 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="B3"></Equipo>
                                                 <Equipo nombre="B6"></Equipo>
                                                 <Equipo nombre="B8"></Equipo>
@@ -144,7 +144,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                                 setShow3(!show3);
                                             }}>
                                     <SubUnits nombre="SERVOCUNAS"></SubUnits>
@@ -153,7 +153,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show3 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="BQ80"></Equipo>
                                             </div>
                                         )
@@ -165,7 +165,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                                 setShow4(!show4);
                                             }}>
                                     <SubUnits nombre="MONITORES FETALES"></SubUnits>
@@ -174,7 +174,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show4 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="C11"></Equipo>
                                                 <Equipo nombre="C20"></Equipo>
                                                 <Equipo nombre="C21"></Equipo>
@@ -197,7 +197,7 @@ export const BodyHospitalaria= () => {
 {/************************************************************************************************************* */}
                     
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow30(!show30);
                         }}>
                         <TipoEquipo nombre="INSIGHTERS"
@@ -211,7 +211,7 @@ export const BodyHospitalaria= () => {
                     (
                     <div className="tipoEquipo">
                         <div className="items">
-                            <div onClick={() => {
+                            <div className="contieneResponsive" onClick={() => {
                                         setShow5(!show5);
                                     }}>
                             <SubUnits nombre="SET DE VIA AEREA"></SubUnits>
@@ -220,7 +220,7 @@ export const BodyHospitalaria= () => {
                             {
                                 show5 ? 
                                 (
-                                    <div className="cont">
+                                    <div className="cont contieneResponsive">
                                         <Equipo nombre="VIDEOLARINGO iS3 L"></Equipo>
                                         <Equipo nombre="FIBROLARINGO iS3 F"></Equipo>
                                         <Equipo nombre="VIDEOLARINGO SEMIRIGIDO"></Equipo>
@@ -245,7 +245,7 @@ export const BodyHospitalaria= () => {
 {/***************************************************************************************************************** */}
 
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow31(!show31);
                         }}>
                         <TipoEquipo nombre="MINDRAY"
@@ -258,7 +258,7 @@ export const BodyHospitalaria= () => {
                         (
                             <div className="tipoEquipo">
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow6(!show6);
                                     }}>
                                     <SubUnits nombre="BOMBAS DE INFUSION, RACKS Y CENTRALES"></SubUnits>
@@ -266,7 +266,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show6 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="BENEFUSION VP5, SP5 y SP5 TCI"></Equipo>
                                                 <Equipo nombre="BENEFUSION VP3 y SP3"></Equipo>
                                                 <Equipo nombre="VP1 y SP1"></Equipo>
@@ -283,7 +283,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow7(!show7);
                                     }}>
                                     <SubUnits nombre="CENTRALES DE MONITOREO"></SubUnits>
@@ -291,7 +291,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show7 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="HYPERVISOR"></Equipo>
                                                 <Equipo nombre="CMS BENEVISION"></Equipo>
                                             </div>
@@ -305,7 +305,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow8(!show8);
                                     }}>
                                     <SubUnits nombre="COLUMNAS"></SubUnits>
@@ -313,7 +313,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show8 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="HYPORT"></Equipo>
                                             </div>
                                         )
@@ -326,7 +326,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow9(!show9);
                                     }}>
                                     <SubUnits nombre="DESFIBRILADORES"></SubUnits>
@@ -334,7 +334,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show9 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="D1"></Equipo>
                                                 <Equipo nombre="C1 y C2"></Equipo>
                                                 <Equipo nombre="D3 y D6"></Equipo>
@@ -349,7 +349,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow10(!show10);
                                     }}>
                                     <SubUnits nombre="ELECTROCARDIOGRAFOS"></SubUnits>
@@ -357,7 +357,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show10 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="R3 y R12"></Equipo>
                                             </div>
                                         )
@@ -370,7 +370,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow11(!show11);
                                     }}>
                                     <SubUnits nombre="HUMIFICADORES"></SubUnits>
@@ -378,7 +378,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show11 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="JIKE"></Equipo>
                                             </div>
                                         )
@@ -391,7 +391,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow12(!show12);
                                     }}>
                                     <SubUnits nombre="LAMPARAS SCIALITICAS"></SubUnits>
@@ -399,7 +399,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show12 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="HYLED 200 y 600"></Equipo>
                                                 <Equipo nombre="HYLED 7"></Equipo>
                                                 <Equipo nombre="HYLED 8"></Equipo>
@@ -415,7 +415,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow13(!show13);
                                     }}>
                                     <SubUnits nombre="MESAS DE ANESTESIA"></SubUnits>
@@ -423,7 +423,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show13 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="WATO 20 y WATO 35"></Equipo>
                                                 <Equipo nombre="WATO 55 y 65 PRO"></Equipo>
                                                 <Equipo nombre="A5, A7 y A9"></Equipo>
@@ -438,7 +438,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow15(!show15);
                                     }}>
                                     <SubUnits nombre="MESAS DE CIRUGIA"></SubUnits>
@@ -446,7 +446,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show15 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="UNIBASE 30"></Equipo>
                                                 <Equipo nombre="HYBASE 3000"></Equipo>
                                                 <Equipo nombre="HYBASE 6100"></Equipo>
@@ -462,7 +462,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow16(!show16);
                                     }}>
                                     <SubUnits nombre="MONITORES MULTIPARAMETRICOS"></SubUnits>
@@ -470,7 +470,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show16 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="uMEC"></Equipo>
                                                 <Equipo nombre="ePM"></Equipo>
                                                 <Equipo nombre="BENEVISION"></Equipo>
@@ -485,7 +485,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow17(!show17);
                                     }}>
                                     <SubUnits nombre="MONITORES DE SIGNOS VITALES"></SubUnits>
@@ -493,7 +493,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show17 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="VS 600"></Equipo>
                                                 <Equipo nombre="VS 900"></Equipo>
                                             </div>
@@ -507,7 +507,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow18(!show18);
                                     }}>
                                     <SubUnits nombre="OXIMETROS"></SubUnits>
@@ -515,7 +515,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show18 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="PM60"></Equipo>
                                             </div>
                                         )
@@ -528,7 +528,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow19(!show19);
                                     }}>
                                     <SubUnits nombre="TELEMETROS"></SubUnits>
@@ -536,7 +536,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show19 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="TM80"></Equipo>
                                             </div>
                                         )
@@ -549,7 +549,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow20(!show20);
                                     }}>
                                     <SubUnits nombre="TORRE DE LAPAROSCOPIA"></SubUnits>
@@ -557,7 +557,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show20 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="HD3"></Equipo>
                                             </div>
                                         )
@@ -570,7 +570,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow21(!show21);
                                     }}>
                                     <SubUnits nombre="VENTILADORES O RESPIRADORES"></SubUnits>
@@ -578,7 +578,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show21 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="E3"></Equipo>
                                                 <Equipo nombre="SV300"></Equipo>
                                                 <Equipo nombre="SV600/SV800"></Equipo>
@@ -601,7 +601,7 @@ export const BodyHospitalaria= () => {
 
 {/****************************************************************************************************************** */}
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow32(!show32);
                         }}>
                         <TipoEquipo nombre="NEOVERO"
@@ -614,7 +614,7 @@ export const BodyHospitalaria= () => {
                     (
                     <div className="tipoEquipo">
                         <div className="items">
-                            <div onClick={() => {
+                            <div className="contieneResponsive" onClick={() => {
                                 setShow22(!show22);
                             }}>
                             <SubUnits nombre="ACCESO WEB Y ACCESO MOBILE"></SubUnits>
@@ -622,7 +622,7 @@ export const BodyHospitalaria= () => {
                             {
                                 show22 ? 
                                 (
-                                    <div className="sub-items">
+                                    <div className="sub-items contieneResponsive">                    
                                         <Pdfs nombre="ANMAT"></Pdfs>
                                         <Pdfs nombre="PRESENTACION"></Pdfs>
                                         <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
@@ -647,7 +647,7 @@ export const BodyHospitalaria= () => {
 {/****************************************************************************************************************** */}
 
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow33(!show33);
                         }}>
                         <TipoEquipo nombre="PARDO"
@@ -660,7 +660,7 @@ export const BodyHospitalaria= () => {
                         (
                             <div className="tipoEquipo">
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow23(!show23);
                                     }}>
                                     <SubUnits nombre="CAMAS"></SubUnits>
@@ -668,7 +668,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show23 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="V1,V2 y V3"></Equipo>
                                                 <Equipo nombre="BARIATRICA"></Equipo>
                                             </div>
@@ -682,7 +682,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow24(!show24);
                                     }}>
                                     <SubUnits nombre="CAMILLAS"></SubUnits>
@@ -690,7 +690,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show24 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="ATICA-TARSIS"></Equipo>
                                             </div>
                                         )
@@ -703,7 +703,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow25(!show25);
                                     }}>
                                     <SubUnits nombre="CUNAS"></SubUnits>
@@ -711,7 +711,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show25 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="TREND-RODAS"></Equipo>
                                             </div>
                                         )
@@ -724,7 +724,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow26(!show26);
                                     }}>
                                     <SubUnits nombre="MESAS DE COMER"></SubUnits>
@@ -732,7 +732,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show26 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="ATRIL GAS"></Equipo>
                                                 <Equipo nombre="SALDUBA"></Equipo>
                                                 <Equipo nombre="VOLTEABLE"></Equipo>
@@ -748,7 +748,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow27(!show27);
                                     }}>
                                     <SubUnits nombre="MOBILIARIOS"></SubUnits>
@@ -756,7 +756,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show27 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="SILLONES"></Equipo>
                                             </div>
                                         )
@@ -778,7 +778,7 @@ export const BodyHospitalaria= () => {
 {/***************************************************************************************************************** */}
 
                     <div className="items">
-                        <div onClick={() => {
+                        <div className="contieneResponsive" onClick={() => {
                                 setShow34(!show34);
                         }}>
                         <TipoEquipo nombre="SCHILLER"
@@ -791,7 +791,7 @@ export const BodyHospitalaria= () => {
                         (
                             <div className="tipoEquipo">
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow28(!show28);
                                     }}>
                                     <SubUnits nombre="MAPA Y HOLTER"></SubUnits>
@@ -799,7 +799,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show28 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="BR 102 PLUS Y PLUS PWA"></Equipo>
                                                 <Equipo nombre="MEDILOG F12 - MEDILOGAR"></Equipo>
                                             </div>
@@ -813,7 +813,7 @@ export const BodyHospitalaria= () => {
                                 </div>
 
                                 <div className="items">
-                                    <div onClick={() => {
+                                    <div className="contieneResponsive" onClick={() => {
                                         setShow288(!show288);
                                     }}>
                                     <SubUnits nombre="TEST DE ESFUERZO"></SubUnits>
@@ -821,7 +821,7 @@ export const BodyHospitalaria= () => {
                                     {
                                         show288 ? 
                                         (
-                                            <div className="cont">
+                                            <div className="cont contieneResponsive">
                                                 <Equipo nombre="CARDIOVIT CS200 EXCELLENCE, TOUCH y CS104"></Equipo>
                                                 <Equipo nombre="CS200 ERGOESPIRO"></Equipo>
                                             </div>

@@ -27,50 +27,29 @@
 
 .navButtons{
   display: flex;
-  justify-content: space-around;
-  width: 45%;
+  flex-direction: row-reverse;
+  width: 65%;
   height: 100%;
-  margin-right: 90px;
 }
 
 .botoncito{
   color: rgb(16, 39, 66);
   text-decoration: none;
-  margin-left: 5%;
   display: flex;
   align-items: center;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
+  font-size: 12px;
+  padding: 26px 10px;
+  width: 160px;
+}
 
-  position: relative;
+.fa-angle-down{
+  margin-left: 4px;
 }
 
 .botoncito:hover{
-  color: #0d6efd;
-}
-
-.botoncito:before{
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  background: #0d6efd;
-  position: absolute;
-  /*left:0;*/
-  bottom:15px;
-  transition: all .3s;
-}
-
-.botoncito:hover:before{
-  width: 100%;
-}
-
-.botoncito:before{
-left:50%;
-}
-
-.botoncito:hover:before{
-left:0;
+  color: #24afb2;
 }
 
 .secondNav img{
@@ -78,22 +57,64 @@ left:0;
 }
 
 .logout{
-  width: 80px;
-  background-color: rgb(45, 171, 180);
+  width: 100px;
+  background-color: #142841;
   border:none;
   border-radius: 10px;
   color: white;
   font-family: 'Poppins', sans-serif;
   transition: all 0.5s ease-in-out;
-  margin-right: 20px;
+  margin-right: 0px;
+  font-size: 12px;
+  padding: 10px 10px;
 }
 
 .logout:hover{
-  background-color: #142841;
+  background-color: #24afb2;
   cursor: pointer;
 }
 
+.iconos{
+  display: flex;
+}
 
+.iconos img{
+  width: 30px;
+  margin-right: 5px;
+}
+
+.contenedorDesplegable{
+  position: relative;
+  align-content: center;
+}
+
+.contenedorDesplegable:hover .desplegable{
+  display: flex;
+}
+
+.desplegable{
+  flex-direction: column;
+  background-color: #142841;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  top: 70px;
+  display: none;
+  width: 160px;
+}
+
+.desplegable a{
+  text-decoration: none;
+  color: white;
+  transition: all .3s ease-in-out;
+  text-align: start;
+  font-size: 12px;
+  padding: 5px 10px
+}
+
+.desplegable a:hover{
+  color:#24afb2;
+  background-color: #1d395a;
+}
 
 /***************************************** BodyHome **************************************/
 
@@ -179,7 +200,7 @@ left:0;
   justify-content: center;
   width: 400px;
   height: 450px;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 
 }
@@ -203,11 +224,12 @@ left:0;
   margin-bottom: 1%;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  background-color: #ccddf8;
+  background-color: #eaeaea;
 }
 
 .bodyLogin input::placeholder{
   color: rgb(71, 71, 71);
+  padding-left: 2%;
 }
 
 .buttonLogin{
@@ -293,7 +315,7 @@ left:0;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 65%;
   height: 60% !important;
   margin-top: 5%;
 }
@@ -301,7 +323,6 @@ left:0;
 /************************************* BODY ULTRA *****************************************/
 
 .bodyUltra{
-  margin-top: 85px;
   background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
@@ -316,7 +337,6 @@ left:0;
 /************************************* BODY ESTETICA *****************************************/
 
 .bodyEstetica{
-  margin-top: 85px;
   background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
@@ -346,7 +366,6 @@ left:0;
 /***************************************** BODY ERROR *************************************/
 
 .bodyError{
-  margin-top: 85px;
   background:url(../src/images/fondo.jpeg) fixed;
   background-position: center;
   background-size: cover;
@@ -367,7 +386,7 @@ left:0;
   margin-top: 4%;
   box-shadow: 5px 5px 20px 2px black;
   text-decoration: none;
-  color: #174180;
+  color: #142841 !important;
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -378,6 +397,7 @@ left:0;
 
 .unitsContainer:hover{
   transform: translateY(-5%);
+  color: #142841 !important;
 }
 
 .unitsContainer img{
@@ -399,7 +419,7 @@ left:0;
 
 .subUnitsContainer{
   height: 60px;
-  width: 800px;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.815);
   border-radius: 5px;
   margin-top: 4%;
@@ -432,7 +452,8 @@ left:0;
 .items{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: center;
+  width: 100%;
 }
 
 .sub-items{
@@ -440,7 +461,7 @@ left:0;
   flex-direction: column;
   transition: all 1s ease-in-out;
   border-radius: 5px;
-  background-color: rgba(170, 162, 162, 0.327);
+  background-color: rgba(170, 162, 162, 0.589);
   margin: 10px 20px 5px 30px;
 }
 
@@ -458,9 +479,14 @@ left:0;
 }
 
 /****************************************** TIPOS DE EQUIPO **********************************/
+.contieneResponsive{
+  display: flex;
+  width: 60%;
+}
+
 .tipoEquipoContainer{
     height: 60px;
-    width: 800px;
+    width: 100%;
     background-color: rgb(248, 248, 248);
     border-radius: 5px;
     margin-top: 4%;
@@ -494,7 +520,7 @@ left:0;
     flex-direction: column;
     transition: all 1s ease-in-out;
     border-radius: 5px;
-    margin-left: 50px;
+    width: 100%;
 }
 
 /******************************************  EQUIPOS ******************************************/
@@ -504,13 +530,13 @@ left:0;
   flex-direction: column;
   transition: all 1s ease-in-out;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-bottom: 5px;
 }
 
 .equipoContainer{
   height: 50px;
-  width: 790px;
+  width: 96.5%;
   background-color: rgba(255, 255, 255, 0.815);
   border-radius: 5px;
   box-shadow: 5px 5px 20px 2px black;

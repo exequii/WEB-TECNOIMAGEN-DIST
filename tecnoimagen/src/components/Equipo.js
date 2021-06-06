@@ -33,6 +33,16 @@ render(){
                         <Pdfs nombre="PRESENTACION"></Pdfs>
                         <Pdfs nombre="EETT PARA PLIEGO"></Pdfs>
                         <Pdfs nombre="DATASHEET"></Pdfs>
+                        {
+                            this.props.exceso ?
+                            (
+                                <Pdfs nombre="exceso"></Pdfs>
+                            )
+                            :
+                            (
+                                <div></div>
+                            )
+                        }
                     </div>
                 )
                 :
